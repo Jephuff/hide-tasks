@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Hide tasks",
+    "description": "Gides tasks panel in google calendar",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "matches": ["https://www.google.com/calendar/render*"],
+            "js": ["hideTasks.js"]
+        }
+    ]
+}
